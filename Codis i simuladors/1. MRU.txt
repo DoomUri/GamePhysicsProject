@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<style type="text/css">
+			#Bola{
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				top: 50px;
+				left: 50px;
+				background: grey;
+				border-radius: 100%;
+				border: 2px solid black;
+				transition-property: left;
+				transition-duration: 1s;
+				transition-delay: 0s;
+				transition-timing-function: linear; 
+			}
+		</style>	
+		<script type="text/javascript">
+			A=1;
+			function Començar(){
+				if(A==1){
+					t=1;
+					A=0;
+					Interval=setInterval(Moviment,1000);
+				}
+			}
+			function Moviment(){
+				v=document.getElementById("velocitat").value;
+				x=50+v*t;
+				document.getElementById("Bola").style.left=x+"px";
+				t=t+1;		
+			}
+			function Parar(){
+				if(A==0){
+					clearInterval(Interval);
+					document.getElementById("Bola").style.left=50+"px";
+					A=1;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="Bola"></div>
+		<input type="text" placeholder="velocitat... [m/s]" id="velocitat"></input>
+		<input value="Començar" type="button" onclick="Començar()"></input>
+		<input value="Parar" type="button" onclick="Parar()"></input>
+	</body>
+</html>
