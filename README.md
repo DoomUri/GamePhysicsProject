@@ -8,4 +8,4 @@ The repository is organized into two main folders:
 
 # Running the Simulators
 
-No installation or additional setup is required to run the simulators. Simply open the corresponding .html file in any modern web browser to interact with the simulation.
+No installation or additional setup is required to run the simulators. Simply open the corresponding .html file in any modern web browser to interact with the simulator.
