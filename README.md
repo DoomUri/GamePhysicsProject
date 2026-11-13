@@ -16,9 +16,9 @@ The project includes five interactive physics simulators covering six different 
 
 - **MRU (Uniform Rectilinear Motion)**
 - **MRUA (Uniformly Accelerated Rectilinear Motion)**
+- **Circular Motion (MCU and MCUA)**
 - **Projectile Motion**
 - **1D Collision**
-- **Circular Motion (MCU and MCUA)**
 
 ### Simulation Features
 
@@ -46,4 +46,4 @@ This approach allows users to experiment with different physical parameters and 
 
 No installation or additional setup is required to run the simulators.
 
-Simply open the corresponding `.html` file inside the `Code/` folder using any modern web browser to interact with the simulation.
+Simply open the corresponding `.html` file inside the `Code/` folder using any modern web browser to interact with the simulator.
